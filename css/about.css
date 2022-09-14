@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Race Guard Font';
+    src: url('../fonts/RaceGuard.otf');
+}
+
+/* html */
+*{
+    box-sizing: border-box;
+}
+main{
+    display:flex;
+    flex-direction:column;
+    justify-content: baseline;
+}
+h2{
+    text-align:center;
+    font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:black;
+    padding:20px;
+}
+h3{
+    font-family:'Franklin Gothic Medium';
+    text-align: center;
+    text-decoration: underline;
+}
+h4{
+    font-family: cursive;
+    text-align: center;
+    padding: 10px;
+}
+body{
+    margin:0px;
+}
+.ceo-pic{
+    margin:5px;
+    padding:20px;
+    border-radius: 21%; 
+    height:50%;
+    width:50%;                                                                                                                                                                                                                                                                                                                                                                        
+}
+.ceo-box{
+    display:flex;
+    flex-direction: column;
+    border:3px solid black;
+    margin:60px;
+    border-radius: 10px;
+}
+.ceo-profile{
+    display:flex;
+    flex-direction: row;
+}
+/*Header for Hyper Nova
+--------------------------*/
+
+.hypernova_header{
+    background-color: rgb(200, 200, 200);
+    display:flex;
+    /* flex-direction: left; */
+    justify-content: space-between;
+    min-height: 140px;
+    height: 140px;
+    padding:10px;
+}
+#hypernova_text{
+    font-family:'Race Guard Font','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    
+}
+#gourav_singh{
+    margin:50px;
+    text-align:center;
+    
+}
+#hypernova_logo{
+    width:auto;
+    height:100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right:250px;
+}
+
+/* section tag  */
+section{
+    min-height: 65vh;
+    margin:0px;
+    background-color: rgb(168, 137, 224);
+}
+
+section:nth-child(even) {
+    background-color: rgb(241, 241, 241);
+}
+
+/* footer tag  */
+footer {
+    background-color: #333;
+    overflow: hidden;
+}
+footer a, footer a:visited {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+.about-footer{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+/* Anchor Tag */
+a, a:hover, a:active {
+    outline: 0px !important;
+    text-decoration: none !important; 
+}
+
+a:visited{
+    color:black;
+}
+a {
+    background-color: transparent;
+}
+
+
+@media (min-width:768px) and (max-width:1200px) {
+    
+}
+
+@media (max-width: 768px) {
+    #gourav_singh{
+        font-size: 60%;   
+    }
+    #hypernova_text{
+        font-size: 30px;   
+    }
+    #hypernova_logo{
+        display: none;
+    }
+    .ceo-profile{
+        display:flex;
+        flex-direction: column;
+    }
+    .ceo-pic{
+        width:60%;
+        align-self: center;
+    }
+
+}
+
+@media (max-width: 520) {
+    #gourav_singh{
+        display:none   
+    }
+    #hypernova_text{
+        font-size: 30px;   
+    }
+    #hypernova_logo{
+        display: none;
+    }
+}
